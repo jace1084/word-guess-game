@@ -1,0 +1,59 @@
+body {
+	position: relative;
+	background-color: #282828;
+}
+
+body {
+    font-family: star-wars-font;
+	color: rgb(255, 224, 51);
+}
+
+.main-section{
+    border: dashed white;
+    font-size: 30px;
+    text-decoration: underline;
+    float:left;
+    /* padding-left: 50px;
+    padding-right: 50px;    */
+}
+.sub-section{
+    border: dashed white;
+    font-size: 30px;
+    text-decoration: underline;
+    
+}
+
+#title {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#instruction, #alerts {
+	text-align: center;
+	font-size: 12px;
+}
+
+#main-content {
+	width: 960px;
+	margin: 0px auto 0px auto;
+}
+
+.panel {
+	background-color: #282828;
+	padding: 20px;
+	margin: 10px;
+}
+
+#word-display {
+	text-align: center;
+	font-size: 32px;
+	padding: 10px;
+	padding-bottom: 20px;
+}
+
+#general-display {
+	text-align: center;
+	font-size: 16px;
+}
+
