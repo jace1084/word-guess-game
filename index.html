@@ -8,7 +8,13 @@
     <title>Hangman</title>
     <link rel="icon" type="image/png" href="assets/images/star-wars.png">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+    body{
+        background-image:url("assets/images/stars.jpeg")
+    }
+        </style>
+    
 
 </head>
 <body>
@@ -22,30 +28,55 @@
         </div>
 
         <div id="instruction">
-            <pre><p>+-------------------------------------------------------------------------------------------------+</p></pre>
-            <pre><p>| <span class="blinking"> ___                                       _                _              _               _   </span> |</p></pre>
-            <pre><p>| <span class="blinking">| _ \ _ _  ___  ___ ___  __ _  _ _  _  _  | |__ ___  _  _  | |_  ___   ___| |_  __ _  _ _ | |_ </span> |</p></pre>
-            <pre><p>| <span class="blinking">|  _/| '_|/ -_)(_-<(_-< / _` || ' \| || | | / // -_)| || | |  _|/ _ \ (_-<|  _|/ _` || '_||  _|</span> |</p></pre>
-            <pre><p>| <span class="blinking">|_|  |_|  \___|/__//__/ \__,_||_||_|\_, | |_\_\\___| \_, |  \__|\___/ /__/ \__|\__,_||_|   \__|</span> |</p></pre>
-            <pre><p>| <span class="blinking">                                    |__/             |__/                                      </span> |</p></pre>
-            <pre><p>+-------------------------+---------------------------------------------+-------------------------+</p></pre>
+ 
+        <span class="blinking">Press Any Key To Start!</span>
+
+        <br>
+        <br>
+
         </div>
 
-        <section class="main-section">
-            <p>Wins</p>
+        <div id=alerts>
+            <pre><p>| <span class="alert-line"></span> |</p></pre>
+            <pre><p>| <span class="alert-line"></span> |</p></pre>
+            <pre><p>| <span class="alert-line"></span> |</p></pre>
+            <pre><p>| <span class="alert-line"></span> |</p></pre>
+            <pre><p>| <span class="alert-line"></span> |</p></pre>
+            <pre><p>+---------------------------------------------+</p></pre>
+        </div>
+
+        <div id="game-div" class="panel">
+            <div id="word-display">
+                <p id="word-display-letters"></p>
+            </div> 
+
+        <div id="general-display">
+            <pre><p>+----Guessed-Letters----------------------------------+</p></pre>
+            <pre><p>| <span id="guessed-letters"></span> |</p></pre>
+            <pre><p>+----Stats--------------------------------------------+</p></pre>
+            <pre><p>| Incorrect Letters: <span id="error-count"></span> |</p></pre>
+            <pre><p>| Wins: <span id="win-count"></span> |</p></pre>
+            <pre><p>| Losses: <span id="loss-count"></span> |</p></pre>
+            <pre><p>+-----------------------------------------------------+</p></pre>
+            </div>
+            </div>
+        
+
+        <!-- <section class="main-section">
+            <span id="win-count">Wins</span>
             <br>
-            <p>Current Word</p>
+            <span>Current Word</span>
             <br>
         </section>
 
         <section class="sub-section">
-            <p>Number of Guesses Remaining</p>
+            <span id="loss-count">Losses</span>
             <br>
-            <p>Letters Already Guessed</p>
+            <span id="guessed-letters">Letters Already Guessed</span>
             <br>
         </section>
         
-        </div>
+        </div> -->
 
     
 
@@ -54,6 +85,6 @@
 
 
 
-
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
