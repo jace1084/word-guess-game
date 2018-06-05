@@ -31,7 +31,10 @@ var emptyAlert = [
 	"                                           ",
 	"                                           "
 ];
-
+var gameSound;
+function startGame (){
+	gameSound = "https://youtu.be/_D0ZQPqeJkk"
+}
 var game = new Hangman();
 
 document.onkeyup = function(event) {
