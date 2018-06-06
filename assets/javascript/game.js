@@ -3,11 +3,11 @@ var losses = 0;
 
 var maxErrors = 9;
 
-var wordDisplayLettersElement = document.getElementById("word-display-letters");
-var guessedLettersElement = document.getElementById("guessed-letters");
-var errorCountElement = document.getElementById("error-count");
-var winCountElement = document.getElementById("win-count");
-var lossCountElement = document.getElementById("loss-count");
+var wordDisplayLettersElement = document.querySelector("#word-display-letters");
+var guessedLettersElement = document.querySelector("#guessed-letters");
+var errorCountElement = document.querySelector("#error-count");
+var winCountElement = document.querySelector("#win-count");
+var lossCountElement = document.querySelector("#loss-count");
 
 var blinkElements = document.getElementsByClassName("blinking");
 var alertLineElements = document.getElementsByClassName("alert-line");
@@ -31,10 +31,10 @@ var emptyAlert = [
 	"                                           ",
 	"                                           "
 ];
-var gameSound;
-function startGame (){
-	gameSound = "https://youtu.be/_D0ZQPqeJkk"
-}
+// var gameSound;
+// function startGame (){
+// 	gameSound = "https://youtu.be/_D0ZQPqeJkk"
+// }
 var game = new Hangman();
 
 document.onkeyup = function(event) {
