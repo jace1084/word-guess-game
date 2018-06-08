@@ -1,7 +1,7 @@
 var wins = 0;
 var losses = 0;
 
-var maxErrors = 9;
+var errorLimit = 9;
 
 var wordDisplayLettersElement = document.querySelector("#word-display-letters");
 var guessedLettersElement = document.querySelector("#guessed-letters");
@@ -114,7 +114,7 @@ Hangman.prototype.checkGuess = function(char) {
 		this.errors++;
 	}
 
-	if (this.errors >= maxErrors) {
+	if (this.errors >= errorLimit) {
 		losses++;
 		this.alertLines = youLose;
 		this.gameOver = true;
@@ -147,7 +147,7 @@ Hangman.prototype.updatePageData = function() {
 	}
 	guessedLettersElement.textContent = tempString;
 
-	tempString = this.errors + " / " + maxErrors;
+	tempString = this.errors + " / " + errorLimit;
 	for (var i = tempString.length; i < 32; i++) {
 		tempString += " ";
 	}
