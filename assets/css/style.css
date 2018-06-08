@@ -3,13 +3,13 @@ body {
 	background-color: #282828;
 }
 .blinking{
-	font-family: star-wars-font;
+	font-family: star-wars-font, Arial, Helvetica, sans-serif;
 	color: rgb(255, 224, 51);
 	font-size: 30px;
 }
 
 body {
-    font-family: star-wars-font;
+	font-family: star-wars-font, Arial, Helvetica, sans-serif;
 	color: rgb(255, 224, 51);
 }
 
