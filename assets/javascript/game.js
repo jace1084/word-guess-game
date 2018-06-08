@@ -15,14 +15,14 @@ var alertLineElements = document.getElementsByClassName("alert-line");
 var validGuesses = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ];
 
 var pressAnyKeyToReset = [
-	"Press Any Key To Reset"
+	"PRESS ANY KEY TO RESET"
 ];
 
 var youWin = [
-	"You Win"
+	"WINNER"
 ];
 var youLose = [
-	"YOU LOSE"
+	"LOSER"
 ];
 var emptyAlert = [
 	"                                           ",
