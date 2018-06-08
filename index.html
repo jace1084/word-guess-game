@@ -7,7 +7,7 @@
 
     <title>Hangman</title>
     
-    <link rel="icon" type="image/png" href="assets/images/star-wars.png">
+    <link rel="icon" type="image/png" href="assets/images/death-star-icon.jpeg">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <style>
@@ -23,12 +23,9 @@
         <embed src="star-wars-theme.mp3" autostart="true" loop="true" hidden="true">  
     
     <div id="main-content">
-        <!-- <div id="title-div">
-            <img id="game-title" src="./assets/images/hangman_title.png" alt="Hangman">
-            <div id="helper">Press any key to get started!</div>
-        </div> -->
+
         <div id="title">
-           <img src="assets/images/star-wars.png" alt "Star-Wars" width="1000px" height="400px">
+           <img src="assets/images/Star-Wars-logo-1.png" alt "Star-Wars" width="1000px" height="400px">
         </div>
 
         <div id="instruction">
@@ -42,10 +39,10 @@
 
         <div id=alerts>
             <pre><p>| <span class="alert-line"></span> |</p></pre>
+            <!-- <pre><p>| <span class="alert-line"></span> |</p></pre>
             <pre><p>| <span class="alert-line"></span> |</p></pre>
             <pre><p>| <span class="alert-line"></span> |</p></pre>
-            <pre><p>| <span class="alert-line"></span> |</p></pre>
-            <pre><p>| <span class="alert-line"></span> |</p></pre>
+            <pre><p>| <span class="alert-line"></span> |</p></pre> -->
             <pre><p>+---------------------------------------------+</p></pre>
         </div>
 
@@ -55,39 +52,20 @@
             </div> 
 
         <div id="general-display">
-            <pre><p>+----Guessed-Letters----------------------------------+</p></pre>
-            <pre><p>| <span id="guessed-letters"></span> |</p></pre>
-            <pre><p>+----Stats--------------------------------------------+</p></pre>
-            <pre><p>| Incorrect Letters: <span id="error-count"></span> |</p></pre>
-            <pre><p>| Wins: <span id="win-count"></span> |</p></pre>
-            <pre><p>| Losses: <span id="loss-count"></span> |</p></pre>
+            <pre><p>+------------------Guessed-Letters--------------------+</p></pre>
+                <p> <span id="guessed-letters"></span></p>
+                        <br>
+            <pre><p>+-----------------------Stats--------------------------+</p></pre>
+                        <br>
+                <p> Incorrect Letters: <span id="error-count"></span></p>
+                        <br>
+                <p> Wins: <span id="win-count"></span></p>
+                        <br>
+                <p> Losses: <span id="loss-count"></span></p>
+                        <br>
             <pre><p>+-----------------------------------------------------+</p></pre>
             </div>
             </div>
-        
-
-        <!-- <section class="main-section">
-            <span id="win-count">Wins</span>
-            <br>
-            <span>Current Word</span>
-            <br>
-        </section>
-
-        <section class="sub-section">
-            <span id="loss-count">Losses</span>
-            <br>
-            <span id="guessed-letters">Letters Already Guessed</span>
-            <br>
-        </section>
-        
-        </div> -->
-
-    
-
-
-
-
-
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
